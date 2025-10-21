@@ -1,0 +1,26 @@
+-->  processer and memory vector port list declaration.
+ a. list down what all ports are required for processor and memory connection.
+ i)with detailed understanding of why each port is required , not by memorizing
+ 	module processer(clk,reset,addr,wdata ,rdata ,wr_rd,valid,ready);
+		input clk
+		input reset
+		input [64:0] rdata
+		input ready;
+		output [0:0]  addr,
+		output wr_rd
+		output valid;
+		output [64:0] wdata;
+
+	endmodule
+
+	module memory(clk,reset,addr,wdata ,rdata ,wr_rd,valid,ready);
+		input clk
+		input reset
+		input [0:0] addr;
+		input [64:0] wdata;
+		input wr_rd;
+		input valid;
+		output [64:0] rdata;
+		output ;ready;
+	endmodule 
+

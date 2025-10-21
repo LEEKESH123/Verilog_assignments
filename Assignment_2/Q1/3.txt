@@ -1,0 +1,36 @@
+3. Vector to vector assignment
+a) Both are same size
+	i) Reg[3:-2]a;
+	a[3]  = b[2];
+	a[2]  = b[3];
+	a[1]  = b[4];
+	a[0]  = b[5];
+	a[-1] = b[6];
+	a[-2] = b[7];
+	
+b) LHS bigger than RHS
+	i)Reg[3:-5]a;
+	ii)reg[7:2]b;
+
+	a[3]  = b[2];
+	a[2]  = b[3];
+	a[1]  = b[4];
+	a[0]  = b[5];
+	a[-1] = b[6];
+	a[-2] = b[7];
+	a[-3] = 0;
+	a[-4] = 0;
+	a[-5] = 0;
+
+c) LHS smaller than RHS
+	i)Reg[3:-2]a;
+	ii)Reg[7:0]b;
+
+	a[3]  = b[0]
+	a[2]  = b[1]
+	a[1]  = b[2]
+	a[0]  = b[3]
+	a[-1] = b[4]
+	a[-2] = b[5]
+   ignore = b[6]
+   ignore = b[7]

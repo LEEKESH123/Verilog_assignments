@@ -1,0 +1,14 @@
+4. Radix conversion
+ a) Reprasent Decimal 743 as 16-bit variable in all radix
+ 		i. octal,Hexa,Decimal,Binary
+
+reg [15:0] myvar;
+
+initial begin
+    myvar = 16'd743;    // decimal
+    myvar = 16'b0000001011100111;  // binary
+    myvar = 16'h02E7;   // hex
+    myvar = 16'o1367;   // octal
+end
+
+

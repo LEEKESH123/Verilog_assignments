@@ -1,0 +1,18 @@
+a.Declare a net type scalar of name 'valid'
+	wire valid;
+
+b.Declare a reg type scalar of addr
+	reg addr;
+
+c.Declare a 33-bit reg vector named wdata whose LSB is 3
+	reg [36:3] wdata;
+
+d.Declare a 64-bit net vector named rdata whose MSB is 69
+	wire [69:6] rdata;
+
+e.Declare an 8-bit vector of name 'write_data' which is output of and gate 
+	wire[7:0] write_data;
+	assign write_data = input1 & input2;
+
+
+
